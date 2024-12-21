@@ -1,0 +1,334 @@
+
+        .header{  
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 88px;
+        padding: 18.59px 16px;     
+        display: flex;
+        align-items: center;
+        }
+        .header__col-left{
+           width: 60%;
+           display: flex;
+           justify-content: start; 
+           align-items: center;
+           
+        }
+        .header__col-right{
+            width: 50%;
+            display: flex;
+            justify-content: end; 
+            align-items: center;
+         }
+         .header__menu{
+            position: relative;
+            background: url(../img/back/burger.svg) no-repeat center;
+        
+         }
+         
+         .repair-icon{
+            background: url(../img/back/repair.svg) no-repeat center;
+            
+            
+         }
+         .repair-status-icon{
+            background: url(../img/back/check-status.svg) no-repeat center;
+            
+         }
+        .header__menu,.header__logo, .header__repair{
+        margin-right: 16px;
+        }
+        .header__repair{
+        margin-left: 20px;
+        }
+        .header__repair::before{
+           content: "";
+           width: 2px;
+           height: 32px;
+           border-right: 2px solid #EAEAEA;
+           border-radius: 1px;
+           position: absolute;
+           margin-left: -20px;
+           margin-top: 4px;
+        }
+        .header__call, .header__chat, .header__profile, .application, .repair-status{
+            display: none;
+        }
+        .title-service{
+            font-family: "TTLakes Bold";
+            font-size: 28PX;
+            line-height: 40px;
+            margin: 0;
+            margin-top: 24px;
+            color: #1B1C21;
+        }
+        .title-service::before{
+            content: "";
+            width: 1px;
+            height: 40px;
+            border-right: 4px solid #41F6D7;
+            border-radius: 2px;
+            margin-right: 12px;
+            margin-left: 0;
+        }
+        .title-service{
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        .main .services-list{
+            display: flex;
+            align-items: center;
+            overflow-x: scroll;
+            
+            margin: 0;
+        }
+        .main .services-list__item{
+            font-family: "TTLakes Regular";
+            font-size: 16px;
+            line-height: 24px;
+            color: #7E7E82;
+            white-space: nowrap;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        .main .services-list__item:first-child {
+            margin-left: 16px;
+        }
+        .main .services-list__item:hover{
+            border: 2px solid #B8FFEC;
+            border-radius: 6px;
+            text-align: center;
+            
+            
+        }
+         .services-list p{
+        margin-top: 6px;
+        margin-bottom: 8px;
+        }
+        .discription{
+            font-family: "TTLakes Regular";  
+            font-size: 14px;
+            line-height: 18px;
+            padding: 0;
+            vertical-align: middle;
+            color: #1B1C21;
+        }
+        .discription__text{
+            margin: 16px;
+            margin-top: 24px;
+        }
+        .discription>p{
+            margin: 0;
+        }
+        .paragraph-2{
+            display: none;
+        }
+        .continue::before{
+            content: "";
+            background-image: url(../img/down-arrow.svg); 
+            background-repeat: no-repeat;
+            width: 8px;
+            height: 10px;
+            margin-left: 8px;
+        }
+        .last-text{
+            display: none;
+        }
+        .continue__text{
+            margin-left: 8px;
+            font-family: "TTLakes Medium";  
+            font-size: 16px;
+            line-height: 24px;
+            color: #1B1C21;
+        }
+        .continue{
+            display: flex;
+            align-items: center;
+            margin-top: 0;
+        }
+        .discription__image{
+            width:100%;
+            
+        }
+        .entry-sign{
+            width:100%;
+            margin:0;
+        }
+
+
+/*BREAKPOINT 768PX*/
+
+@media screen and (min-width: 768px){
+
+        .header__col-left, .header__col-right{
+            display: flex;
+            align-items: center;
+        }
+        .header__menu,.header__logo, .header__repair{
+        margin-right: 16px;
+        }
+        .header__menu::after{
+            content: "";
+            width: 2px;
+            height: 32px;
+            border-right: 2px solid #EAEAEA;
+            border-radius: 1px;
+            position: absolute;
+            top: 10%;
+           right: -20px;
+        }
+        .header__logo{
+            margin-left: 20px;  
+        }
+        .header__repair{
+        margin-left: 20px;;
+        }
+        .header__call, .header__chat, .header__profile{
+            display: block;
+            margin-left: 16px;
+        }
+        .header .header__call, .header .header__chat {
+            margin-right: 0;
+        }
+        .header__call{
+            background: url(../img/back/call.svg) no-repeat center;
+            margin-right: 0;
+         }
+         .header__chat{
+            background: url(../img/back/chat.svg) no-repeat center;
+            
+         }
+         .header__profile{
+            background: url(../img/back/profile.svg) no-repeat center;
+            
+         }
+        .header__profile{
+            margin-right: 20px;
+        }
+        .title-service{
+            margin-bottom: 32px;
+        }
+        .discription{
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .discription__image{
+            width: 50%;
+            margin-top: 32px;
+        }
+        .discription__text{
+            line-height: 20px;
+            margin: 0;
+            margin-top: 32px;
+            width: 50%;
+            padding-right: 42px;
+        }
+        .discription__text>p{
+            margin-top: 0;
+        }
+        .paragraph-2{
+            display: inline;
+        }
+        .entry-sign{
+            width: 100%;
+            margin: 0;
+        }
+}
+
+/*BREAKPOINT 1120PX*/
+
+@media screen and (min-width: 1120px)
+{
+
+    
+    .page-body{
+        width: 1120px;
+        margin: 0 auto;
+    }
+        
+        .main .services-list__item:last-child {
+            margin-left: 16px;
+        }
+        .discription{
+            width:100%;
+            padding: 0;
+            margin: 0;
+        }
+        .discription__image{
+            width: 50%;
+            margin-top: 48px;
+        }
+        .discription__text{
+            width: 50%;
+            padding-right: 42px;
+            padding-top: 10px;
+            margin-left: 16px;
+            margin-top: 48px;
+        }
+        .discription__text>p{
+            margin-top: 0;
+        }
+        .last-text{
+            display: inline;
+        }
+        .continue::before{
+            left: 120px;
+        }
+        .entry-sign{
+            margin: 0;
+        }
+}
+   
+@media screen and (min-width: 1366px) {
+
+    .header{  
+        width: 100%;
+        height: 88px;
+        padding: 18.59px 16px;     
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        background-color: #F8F8F8;
+        }
+        .header__col-right{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            
+            margin-top: 42px;
+            font-family: "TTLakes Medium";  
+            font-size: 16px;
+            line-height: 24px;
+            color: #1B1C21;
+        }
+        .header__col-right p{
+            display: inline;
+            margin-right: 8px;
+        }
+        .header__check-status, .header__repair{
+            display: flex;
+            margin: 0;
+            margin-left: 32px;
+            align-items: center;
+        }
+        .header__col-left, .header__call, .header__chat, .header__profile{
+            display: none;
+        }
+        .header__repair::before{
+          display: none;
+        }
+        .title-service{
+            margin-top: -47px;
+        }
+        .title-service::before{
+            margin-right: 30px;
+            margin-left: 0;
+        }
+        .main .services-list{
+            overflow-x: hidden;
+            flex-wrap: wrap;
+        }
+}
+    
