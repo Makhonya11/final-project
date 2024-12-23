@@ -170,16 +170,20 @@ padding: 16px;
   text-align: left;
   background-color: transparent;
   cursor: pointer;
+  
 }
-.offer::after{
+.offer-arrow {
+  position: relative;
+}
+.offer-arrow::after{
   content: " ";
-  display: inline-block;
   background:  url(../img/dropdown.png) no-repeat;
   width: 8px;
   height: 12px;
   margin-left: 10px;
+  margin-top: 6px;
   vertical-align: middle;
-  
+  position: absolute;
 }
 .page-footer {
   display: flex;
