@@ -507,7 +507,8 @@ button.swiper-pagination-bullet {
   height: 40px;
   border-radius: 50%;
   background-color: #FF3E79;
-  transition-duration: 0.2s; }
+  transition-duration: 0.2s;
+  border: none; }
 
 .icon:hover {
   background-color: #41F6D7;
@@ -865,14 +866,18 @@ button.swiper-pagination-bullet {
   background-color: transparent;
   cursor: pointer; }
 
-.offer::after {
+.offer-arrow {
+  position: relative; }
+
+.offer-arrow::after {
   content: " ";
-  display: inline-block;
   background: url(./static/dropdown.png) no-repeat;
   width: 8px;
   height: 12px;
   margin-left: 10px;
-  vertical-align: middle; }
+  margin-top: 6px;
+  vertical-align: middle;
+  position: absolute; }
 
 .page-footer {
   display: flex;

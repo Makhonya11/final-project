@@ -16,9 +16,9 @@
                 <div class="sidebar-wrapper">
                     <header class="menu-header">
                         <div class="menu-header__wrapper">
-                        <div class="icon exit"></div>
+                        <button class="icon exit"></button>
                         <div class="header-logo"><img src="img/logo.svg" alt="логотип" class="logo"></div>
-                        <div class="icon search"></div>
+                        <button class="icon search"></button>
                             </div>
                     </header>  
                     <nav class="services">
@@ -34,9 +34,9 @@
                         </ul>
                     </nav> 
                     <div class="menu-bottom">
-                        <div class="call icon"></div>
-                        <div class="chat icon"></div>
-                        <div class="profile icon"></div>
+                        <button class="call icon"></button>
+                        <button class="chat icon"></button>
+                        <button class="profile icon"></button>
                     </div>   
                     <div class="contacts">
                         <a class="email" href="mailto:mail@cps.com">mail@cps.com</a>
@@ -55,20 +55,20 @@
         <div class="page-body">
             <header class="header">
                 <div class="header__col-left">
-                    <div class="header__menu icon"></div>
+                    <button class="header__menu icon"></button>
                     <div class="header__logo"><img src="img/logo.svg" alt="logo"> </div>
                 </div>
                 <div class="header__col-right">
-                    <div class="header__call icon call"></div>
-                    <div class="header__chat icon chat"></div>
-                    <div class="header__profile icon"></div>
+                    <button class="header__call icon call"></button>
+                    <button class="header__chat icon chat"></button>
+                    <button class="header__profile icon"></button>
                     <div class="header__repair">
                        <p class="application">Оставить заявку</p>
-                       <div class="repair-icon icon"></div> 
+                       <button class="repair-icon icon"></button> 
                     </div>
                     <div class="header__check-status">
                         <p class="repair-status">Статус ремонта</p>
-                        <div class="repair-status-icon icon"></div> 
+                        <button class="repair-status-icon icon"></button> 
                     </div>
                 </div>
             </header>
@@ -224,7 +224,7 @@
         <p class="price-details">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. 
             Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
         </p>
-        <button class="offer">Получить коммерческое предложение</button>
+        <button class="offer">Получить коммерческое <span class="offer-arrow">предложение</span></button>
     </main>  
         
         <footer class="page-footer">
@@ -237,12 +237,12 @@
         <div class="feedback">
             <div class="feedback-wrapper">
                 <button class="close"></button>
-                <h1 class="feedback-heading">Обратная связь</h1>
+                <h2 class="feedback-heading">Обратная связь</h2>
                 <form action="" class="feedback-form">
-                    <label><input type="text" name="first-name" placeholder="Имя"></label>
-                    <label><input type="tel" name="telephone" placeholder="Телефон"></label>
-                    <label><input type="email" name="email" placeholder="Электронная почта"></label>
-                    <label><textarea name="message" placeholder="Сообщение"></textarea></label>
+                    <label><input type="text" name="first-name" placeholder="Имя" required minlength="10"></label>
+                    <label><input type="tel" name="telephone" placeholder="Телефон" required pattern="^\+7[0-9]{10}$"></label>
+                    <label><input type="email" name="email" placeholder="Электронная почта" required minlength="10"></label>
+                    <label><textarea name="message" placeholder="Сообщение" required minlength="10"></textarea></label>
                     <p class="agreement">Нажимая “отправить”, вы даете согласие на <a href="#" class="processing">обработку персональных данных</a>
                          и соглашаетесь с нашей <a href="#" class="privacy">политикой конфиденциальности</a></p>
                          <button class="send-form">ОТПРАВИТЬ</button>
@@ -252,9 +252,9 @@
         <div class="callback">
             <div class="callback-wrapper">
                 <button class="close"></button>
-                <h1 class="callback-heading">Заказать звонок</h1>
+                <h2 class="callback-heading">Заказать звонок</h2>
                 <form action="" class="callback-form">
-                    <label><input type="tel" name="telephone" placeholder="Телефон"></label>
+                    <label><input type="tel" name="telephone" placeholder="Телефон" required></label>
                     <p class="agreement">Нажимая “отправить”, вы даете согласие на <a href="#" class="processing">обработку персональных данных</a>
                          и соглашаетесь с нашей <a href="#" class="privacy">политикой конфиденциальности</a></p>
                          <button class="send-form">ОТПРАВИТЬ</button>
