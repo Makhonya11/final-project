@@ -34,13 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('resize', toggleSwiper)
 
 const expendButton = document.querySelector('.expend');
-const expendSecond = document.querySelector('.second');
-const swiperWrapper = document.querySelector('.swiper-wrapper');
 const brands = document.querySelector('.brands');
-const devices = document.querySelector('.devices');
+const swiperWrapper = brands.querySelector('.swiper-wrapper');
 const swiperSlides = brands.querySelectorAll('.hidden');
-const secondSlides = devices.querySelectorAll('.hidden');
-
 
     expendButton.addEventListener('click', function () {
         for (let i = 0; i < swiperSlides.length; i++) {
@@ -56,20 +52,7 @@ const secondSlides = devices.querySelectorAll('.hidden');
         }
     });
 
-    expendSecond.addEventListener('click', function () {
-        for (let i = 0; i < secondSlides.length; i++) {
-            secondSlides[i].classList.toggle('hidden')
-            
-        }
-        expendSecond.classList.toggle('active');
-        if (expendSecond.classList.contains('active')) {
-    
-            expendSecond.textContent = 'Скрыть';
-        } else  {
-            expendSecond.textContent = 'Показать все';
-        }
-    });
-
+    export{swiper, breakpoint,toggleSwiper ,expendButton ,swiperWrapper ,swiperSlides}
 
 
 
