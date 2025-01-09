@@ -96,11 +96,19 @@ display: block;
     .brand-list {
         column-gap: 32px;
         margin-left: 32px;
+        
     }
-    .unhidden {
-        display: flex;
-    }
+    
     .swiper-wrapper {
         max-width: 100%;
     }
 }
+
+/*BREAKPOINT 1366px*/
+
+@media screen and (min-width: 1366px) {
+    .unhidden {
+        display: flex;
+      }
+}
+
